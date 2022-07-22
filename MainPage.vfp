@@ -1,0 +1,5 @@
+<apex:page controller="MainPageClass">
+    <apex:form>
+        <apex:commandButton action="{!redirect}" value="GotoHelloWorld"/>
+    </apex:form>
+</apex:page>
