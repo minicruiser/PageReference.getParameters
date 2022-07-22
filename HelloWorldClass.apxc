@@ -1,0 +1,10 @@
+public class HelloWorldClass {
+
+    public String getParam1{set;get;}
+    public String getParam2{set;get;} 
+    
+    public HelloWorldClass(){
+        this.getParam1 = ApexPages.currentPage().getParameters().get('param1');
+        this.getParam2 = ApexPages.currentPage().getParameters().get('param2');
+    }
+}
