@@ -1,0 +1,5 @@
+<apex:page controller="HelloWorldClass">
+    <h1>
+        <apex:outputText value="{!getParam1},{!getParam2}!"></apex:outputText>
+    </h1>
+</apex:page>
