@@ -1,0 +1,18 @@
+public class MainPageClass {
+
+    public String param1{set;get;}
+    public String param2{set;get;}
+    
+    public MainPageClass () {
+        this.param1 = 'Hello';
+        this.param2 = 'World';
+    }
+    
+    public PageReference redirect() {
+        PageReference pr = Page.HelloWorldPage;
+        pr.getParameters().put('param1', this.param1);
+        pr.getParameters().put('param2', this.param2);
+        return pr;
+    }
+        
+}
